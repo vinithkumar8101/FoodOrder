@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- custom css file Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--header section starts-->
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">Hotel Vini</a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+                <a href="#faq">Faq</a>
+             </nav>
+             <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="order-btn" class="fas fa-box"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+
+             </div>
+        </section>
+    </header>
+    <!--header section ends-->
+<div class="user-account">
+    <section>
+        <div id="close-account"><span>close</span></div>
+    <div class="user">
+        <p><span>You are not logged in now!</span></p>
+    </div>
+    <div class="display-orders">
+        <p>Idli <span>(RS.10)</span></p>
+        <p>Podi Idli <span>(RS.20)</span></p>
+        <p>Dosa <span>(RS.40)</span></p>
+        <p>Masala Dosa <span>(RS.50)</span></p>
+        <p>Podi Dosa <span>(RS.50)</span></p>
+        <p>Vada <span>(RS.10)</span></p>
+    </div>
+    <div class="flex">
+        <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="Enter your E-mail" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+        </form>
+        <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="Enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="Confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+        </form>
+    </div>
+    </section>
+</div>
+
+<div class="my-orders">
+    <section>
+
+        <div id="close-orders"><span>close</span></div>
+        <h3 class="title">My order</h3>
+
+        <div class="box">
+            <p>Placed On:<span>09/01/2024</span></p>
+            <p>Name: <span>vinith</span></p>
+            <p>Number: <span>8608040325</span></p>
+            <p>Address: <span>Flat No:10,MATTUKUPPAM,CHENNAI,INDIA-600045</span></p>
+            <p>Payment method: <span>Cash on delivery</span></p>
+            <p>Your Order: <span>Idli 01 rs:10,Vada rs:10</span></p>
+            <p>Total Price:<span>rs:20</span></p>
+            <p>Payment Status:<span style="color: var(--red);">Pending</span></p>
+        </div>
+
+        <div class="box">
+            <p>Placed On:<span>09/01/2024</span></p>
+            <p>Name: <span>Kumar</span></p>
+            <p>Number: <span>8608040325</span></p>
+            <p>Address: <span>Flat No:10,MATTUKUPPAM,CHENNAI,INDIA-600045</span></p>
+            <p>Payment method: <span>Cash on delivery</span></p>
+            <p>Your Order: <span>Idli 01 rs:10,Vada rs:10</span></p>
+            <p>Total Price:<span>rs:20</span></p>
+            <p>Payment Status:<span style="color: var(--red);">Pending</span></p>
+        </div>
+    </section>
+</div>
+<div class="shopping-cart">
+    <section>
+        <div id="close-cart"><span>close</span></div>
+        
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="idli-recipe.jpg" alt="">
+            <div class="content">
+                <p>Idli<span>(RS.10)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty" aria-colcount="qty-btn"></button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="Podi Idli.jpg" alt="">
+            <div class="content">
+                <p>Podi Idli<span>(RS.20)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="dosa.jpg" alt="">
+            <div class="content">
+                <p>Dosa<span>(RS.40)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="masala-dosa-recipe.jpg" alt="">
+            <div class="content">
+                <p>Masala Dosa<span>(RS.50)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="podi dosa.jpg" alt="">
+            <div class="content">
+                <p>Podi Dosa<span>(RS.50)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="Vada.jpg" alt="">
+            <div class="content">
+                <p>Vada<span>(RS.10)</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+            </div>
+        </div>
+        <a href="#order" class="btn">Order Now</a>
+
+
+
+    </section>
+</div>
+
+        <div class="home-bg">
+            <section class="home" id="home">
+                <div class="slide-container">
+                    <div class="slide active">
+                        <div class="image">
+                            <img src="Podi Idli.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>HomeMade Podi Idli</h3>
+                            <div class="fas fa-angle-left" onclick="prev()"></div>
+                            <div class="fas fa-angle-right" onclick="next()"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>  
+        <div class="home-bg">
+                    <section class="home">
+                        <div class="slide-container">
+                            <div class="slide active">
+                                <div class="image">
+                                    <img src="dosa.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h3>HomeMade Dosa</h3>
+                                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                                    <div class="fas fa-angle-right" onclick="next()"></div>
+                                </div>
+                            </div>
+                        </div>
+
+</section>
+   
+</div>
+<div class="home-bg">
+    <section class="home">
+        <div class="slide-container">
+            <div class="slide active">
+                <div class="image">
+                    <img src="Vada.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>HomeMade Vada</h3>
+                    <div class="fas fa-angle-left" onclick="prev()"></div>
+                    <div class="fas fa-angle-right" onclick="next()"></div>
+                </div>
+            </div>
+        </div>
+</section>
+</div>
+        
+<!--about section starts-->
+<section class="about" id="about">
+    <h1 class="heading">About</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="download (1).jpg" alt="">
+            <h3>Made with love</h3>
+            <a href="#menu" class="btn">our menu</a>
+        </div>
+        <div class="box">
+            <img src="download (2).jpg" alt="">
+            <h3>30 Minutes delivery</h3>
+            <a href="#menu" class="btn">our menu</a>
+        </div>
+        <div class="box">
+            <img src="s.webp" alt="">
+            <h3>Share with friends</h3>
+            <a href="#menu" class="btn">our menu</a>
+        </div>
+    </div>
+</section>
+
+<!--about section ends-->
+
+
+<!--menu section start-->
+<section id="menu" class="menu">
+    <h1 class="heading">Our Menu</h1>
+    <div class="box-container">
+        <div class="box">
+        <div class="price">Rs<span>10</span>/-</div>
+        <img src="idli-recipe.jpg" alt="">
+        <div class="name">Idli</div>
+        <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+        </form>
+        </div>
+
+        <div class="box">
+            <div class="price">Rs<span>20</span>/-</div>
+            <img src="Podi Idli.jpg" alt="">
+            <div class="name">Podi Idli</div>
+            <form action="" method="post">
+                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+            </div>
+            <div class="box">
+                <div class="price">Rs<span>40</span>/-</div>
+                <img src="dosa.jpg" alt="">
+                <div class="name">Dosa</div>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                </form>
+                </div>
+                <div class="box">
+                    <div class="price">Rs<span>50</span>/-</div>
+                    <img src="podi-dosa-1611444045_ZT3LKKYRY1RZ7MDL5C7E.jpg" alt="">
+                    <div class="name">Podi Dosa</div>
+                    <form action="" method="post">
+                        <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                        <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                    </form>
+                    </div>
+                    <div class="box">
+                        <div class="price">Rs<span>50</span>/-</div>
+                        <img src="masala-dosa-recipe.jpg" alt="">
+                        <div class="name">Masala Dosa</div>
+                        <form action="" method="post">
+                            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                        </form>
+                        </div>
+                        <div class="box">
+                            <div class="price">Rs<span>10</span>/-</div>
+                            <img src="images.jpg" alt="">
+                            <div class="name">Vada</div>
+                            <form action="" method="post">
+                                <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                                <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+                            </form>
+                            </div>
+    </div>
+</section>
+
+
+
+<!--menu section ends-->
+
+<!--order section starts-->
+<section class="order" id="order">
+    <h1 class="header">Order Now</h1>
+    <form action="" method="post">
+        <div class="display-orders">
+        <p>Idli <span>(RS.10)</span></p>
+        <p>Podi Idli <span>(RS.20)</span></p>
+        <p>Dosa <span>(RS.40)</span></p>
+        <p>Masala Dosa <span>(RS.50)</span></p>
+        <p>Podi Dosa <span>(RS.50)</span></p>
+        <p>Vada <span>(RS.10)</span></p>
+        </div>
+        <div class="flex">
+            <div class="inputbox">
+                <span>Your Name:</span>
+                <input type="text" name="name" class="box" required placeholder="Enter Your Name" maxlength="20">
+            </div>
+            <div class="inputbox">
+                <span>Your Number:</span>
+                <input type="text" name="name" class="box" required placeholder="Enter Your Number" maxlength="20">
+            </div>
+            <div class="inputbox">
+                <span>Payment Method</span>
+                <select name="method" class="box">
+                    <option value="Cash on delivery">Cash on delivery</option>
+                    <option value="Credit card">Credit card</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="paypal">Paypal</option>
+                </select>
+            </div>
+            <div class="inputbox">
+                <span>Address line 01:</span>
+                <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+            </div>
+            <div class="inputbox">
+                <span>Address line 02:</span>
+                <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+            </div>
+            <div class="inputbox">
+                <span>PinCode:</span>
+                <input type="text" name="pin_code" class="box" required placeholder="e.g. 123456" maxlength="50">
+            </div>
+        </div>
+
+        <input type="submit" value="order now" class="btn" name="order">
+    </form>
+</section>
+
+
+<!--order section ends-->
+<!--faq section starts-->
+<section class="faq" id="faq">
+    <h1 class="header">FAQ</h1>
+    <div class="accordion-container">
+        <div class="accordion">
+            <div class="accordion-heading">
+                <span>How does it work?</span>
+                <i class="fas fa-angle-down">i am</i>
+            </div>
+            <p class="accrodion-content"></p>
+        </div>
+    </div>
+</section>
+<!--faq section ends-->
+
+<!--footer section starts-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Phone Number:</h3>
+            <p>+91 8608040325</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Address:</h3>
+            <p>vinithkumar@gmail.com</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!--footer section ends-->
+
+
+
+    <!---custom js file link-->
+    <script src="script.js"></script>
+</body>
+</html>
